@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+</head>
+<body>
+    <h1>Event Registration Form</h1>
+    <form action="/submit-event" method="post">
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first_name" required>
+            <br><br>
+            
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last_name" required>
+            <br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+        </fieldset>
+        <br>
+
+        <!-- Event Details -->
+        <fieldset>
+            <legend>Event Details</legend>
+            
+            <label for="event-name">Event Name:</label>
+            <input type="text" id="event-name" name="event_name" required>
+            <br><br>
+            
+            <label for="event-date">Event Date:</label>
+            <input type="date" id="event-date" name="event_date" required>
+            <br><br>
+            
+            <label for="event-time">Event Time:</label>
+            <input type="time" id="event-time" name="event_time" required>
+            <br><br>
+            
+            <label for="attendees">Number of Attendees:</label>
+            <input type="number" id="attendees" name="attendees" min="1" required>
+        </fieldset>
+        <br>
+        
+        <!-- Additional Information -->
+        <fieldset>
+            <legend>Additional Information</legend>
+            
+            <label for="comments">Comments or Questions:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        </fieldset>
+        <br>
+        
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
