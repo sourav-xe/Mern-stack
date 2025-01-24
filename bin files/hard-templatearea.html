@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        #container{
+            height: 700px;
+            width: 800px;
+            background-color: black;
+            display: grid;
+            gap: 10px;
+            padding: 10px;
+            grid-template-areas:" red1 blue1 blue1 yellow1 yellow1 red1 yellow2 white1 red2 white 2 yellow2 white1 red2 white2 red3 red3 blue2 red2";
+        }
+        .box{
+             /* height:100px;
+            width: 100px;  */
+            background-color: red;
+            padding: 5px;
+            margin: 5px;
+
+        }
+        .red1{
+           grid-area:red1;
+           
+            
+        }
+        .white1{
+            grid-area:white1;
+        }
+        .blue1{
+            grid-area:blue1;
+        }
+        .yellow1{
+            grid-area:yellow1;
+        }
+        .yellow2{
+            grid-area:yellow2;
+        }
+        .white2{
+            grid-area:white2;
+        }   
+        .red2{
+            grid-area:red2;
+        }   
+        .blue2{
+            grid-area:blue2;
+        }  
+        .red3{
+            grid-area:red3;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+    <div id="container">
+        <div class="box red1">red1</div>
+        <div class="box white1">white1</div>
+        <div class="box blue1">blue1</div>
+        <div class="box yellow1">yellow1</div>
+        <div class="box yellow2">yellow2</div>
+         <div class="box white2">white2</div>
+          <div class="box red2">red2</div>
+          <div class="box blue2">blue2</div>
+          <div class="box red3">red3</div>
+    </div> 
+</center>
+</body>
+</html>

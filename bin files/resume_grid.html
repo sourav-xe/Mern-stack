@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        #container{
+            height: 700px;
+            width: 800px;
+            background-color: black;
+            display: grid;
+            grid-template-rows:repeat(8,1fr);
+            grid-template-columns: repeat(3,1fr);
+           
+        }
+        .box{
+            /* height:100px;
+            width: 100px; */
+            background-color: red;
+            padding: 5px;
+            margin: 5px;
+
+        }
+        .header{
+            grid-column: 1/4;
+            background-color: aqua;
+        }
+        .Tools{
+                grid-row: 2/5;
+        }
+        .skill{
+            grid-row: 5/8;
+        }
+       .Summary{
+        grid-column: 2/4;
+        grid-row: 2/4;
+
+
+       }
+        .project{
+            grid-row: 4/6;
+            grid-column: 2/4;
+        }
+        .Achivment{
+            grid-row: 6/8;
+            grid-column: 2/4;
+        }
+         .Footer{         
+            grid-column: 1/4;
+        } 
+
+    </style>
+</head>
+<body>
+    <center>
+    <div id="container">
+        <div class="box header">header</div>
+        <div class="box Tools">Tools</div>
+        <div class="box skill">skill</div>
+        <div class="box Summary">Summary</div>
+        <div class="box project">project</div>
+        <div class="box Achivment">Achivment</div>
+         <div class="box Footer">Footer</div>
+    </div> 
+</center>
+</body>
+</html>
