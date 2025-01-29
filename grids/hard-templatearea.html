@@ -6,14 +6,17 @@
     <title>Resume</title>
     <style>
         #container{
-            height: 700px;
-            width: 800px;
+            height: 500px;
+            width: 650px;
             background-color: black;
             display: grid;
-            gap: 10px;
-            padding: 10px;
-            grid-template-areas:" red1 blue1 blue1 yellow1 yellow1 red1 yellow2 white1 red2 white 2 yellow2 white1 red2 white2 red3 red3 blue2 red2";
-        }
+            margin: 50px auto;
+            padding: 5px;
+            grid-template-areas:" red1 blue1 blue1 yellow1 yellow1" 
+             "red1 yellow2 white1 white1 red2"
+             "white2 yellow2 white1 white1 red2"
+             "white2 red3 red3 blue2 red2";
+        }  
         .box{
              /* height:100px;
             width: 100px;  */
@@ -29,33 +32,40 @@
         }
         .white1{
             grid-area:white1;
+            background-color: white;
         }
         .blue1{
             grid-area:blue1;
+            background-color: rgb(86, 196, 240);
         }
         .yellow1{
             grid-area:yellow1;
+            background-color: yellow;
         }
         .yellow2{
             grid-area:yellow2;
+            background-color: yellow;
         }
         .white2{
             grid-area:white2;
+            background-color: white;
         }   
         .red2{
             grid-area:red2;
+            border-color: red;
         }   
         .blue2{
             grid-area:blue2;
+            background-color:skyblue;
         }  
         .red3{
             grid-area:red3;
+            background-color: red;
         }
 
     </style>
 </head>
 <body>
-    <center>
     <div id="container">
         <div class="box red1">red1</div>
         <div class="box white1">white1</div>
@@ -67,6 +77,5 @@
           <div class="box blue2">blue2</div>
           <div class="box red3">red3</div>
     </div> 
-</center>
 </body>
 </html>

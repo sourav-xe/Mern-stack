@@ -6,8 +6,7 @@
     <title>Resume</title>
     <style>
         #container{
-            height: 700px;
-            width: 800px;
+            height: 100vh;
             background-color: black;
             display: grid;
             grid-template-rows:repeat(8,1fr);
@@ -17,7 +16,7 @@
         .box{
             /* height:100px;
             width: 100px; */
-            background-color: red;
+           background-color: rgb(255, 255, 255);
             padding: 5px;
             margin: 5px;
 
@@ -26,10 +25,10 @@
             grid-column: 1/4;
             background-color: aqua;
         }
-        .Tools{
+        .Skill{
                 grid-row: 2/5;
         }
-        .skill{
+        .Tool{
             grid-row: 5/8;
         }
        .Summary{
@@ -49,20 +48,48 @@
          .Footer{         
             grid-column: 1/4;
         } 
+        .myimg{
+            justify-content: start;
+            align-items: center;
+            border-radius: 100%;
+            width: 100px;
+            }
+        h1{
+            justify-content: center;
+            align-items: center;
+        }
+        .skill{
+            font-weight: bolder;
+            justify-content: center;
+            align-items: center;
+        }
 
     </style>
 </head>
 <body>
-    <center>
+   
     <div id="container">
-        <div class="box header">header</div>
-        <div class="box Tools">Tools</div>
-        <div class="box skill">skill</div>
+        <div class="box header"><h1>Sourav</h1>
+            <div class="myimg">
+                <img src="sourav_img.jpg" alt="my image" width="100px
+                ">
+            </div>
+        </div>
+        <div class="box Skill">
+          <P >Skills:-</P> 
+          <ol>HTML</ol>
+          <ol>CSS</ol>
+          <ol>C lANGUAGE</ol>
+          <ol>C++</ol>
+          <ol>DSA</ol>
+        
+        </div>
+        <div class="box Tool">Tool</div>
         <div class="box Summary">Summary</div>
         <div class="box project">project</div>
         <div class="box Achivment">Achivment</div>
          <div class="box Footer">Footer</div>
     </div> 
-</center>
+
 </body>
 </html>
