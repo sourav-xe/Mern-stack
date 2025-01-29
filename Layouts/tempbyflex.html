@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        #container{
+            height: 700px;;
+            width:800px;
+            background-color:rgb(46, 45, 45);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+            margin: 50px auto;
+            
+        }
+
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+            
+        }
+        .header{
+            background-color: rgb(204, 69, 204);
+            flex-grow: 1;
+           
+        }
+        .main{
+            display: flex;
+            flex-direction: row;
+        }
+        .sidebar{
+            background-color: rgb(75, 173, 211);
+               flex-grow: 1;
+               height: 400px;
+        }
+        .content1{
+            background-color: rgb(93, 93, 212);
+            flex-grow: 3;
+            height: 250px;
+            
+        }
+        .content2{
+           flex-grow: ;
+            align-self: self-end;
+            height: 140px;
+           
+        }
+        .content3{
+           flex-grow: 1;
+        }
+        .footer{
+            flex-grow: 1;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+           <div class="box header">header</div>
+    <div class="main">
+           <div class="box sidebar">sidebar</div>
+           <div class="box content1">content1</div>
+           <div class="box content2">content-2</div>
+           <div class="box content3">content-3</div>
+     </div>
+       <div class="box footer">footer</div>
+    </div>
+</body>
+</html>
